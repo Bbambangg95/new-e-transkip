@@ -17,6 +17,7 @@
     <div class="wrapper">
       @include('layout.navbar')
       @yield('content')
-      </div>
+      @include('layout.footer')
+    </div>
   </body>
 </html>
