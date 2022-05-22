@@ -18,7 +18,7 @@
                                     <option value="2023" >2023</option>
                                     <option value="2021" >2021</option>
                                     <option value="2020" >2020</option>
-                                    <option value="2019" >2019</option>    
+                                    <option value="2019" >2019</option>
                                     <option value="2018" >2018</option>
                                     <option value="2017" >2017</option>
                                   </select>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="page-body">
-                    <div class="row row-cards">    
+                    <div class="row row-cards">
                       <div class="col-12">
                       <div class="card">
                         <div class="table-responsive">
@@ -49,9 +49,9 @@
                                 @foreach($data_siswas as $data_siswas)
                               <tr>
                                 <td>{{$data_siswas->nama}}</td>
-                                <td class="text-muted"></td>
-                                <td class="text-muted"><a href="#" class="text-reset"></a></td>
-                                <td class="text-muted"></td>
+                                <td class="text-muted">{{$data_siswas->nisn}}</td>
+                                <td class="text-muted">{{$data_siswas->nis}}</td>
+                                <td class="text-muted">{{$data_siswas->tahun_masuk}}</td>
                                 <td>
                                 <div class="d-flex">
                                   <a href="" class="btn me-2">
@@ -80,12 +80,12 @@
                           </table>
                         </div>
                       </div>
-                      </div>      
-                    
+                      </div>
+
                   </div>
                 </div>
                 </div>
                 </form>
-                
+
       </div>
 @endsection
