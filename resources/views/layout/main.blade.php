@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>E-Transkip</title>
     <!-- CSS files -->
-    <link href="./css/tabler-flags.min.css" rel="stylesheet"/>
-    <link href="./css/tabler.css" rel="stylesheet"/>
-    <link href="./css/tabler.min.css" rel="stylesheet"/>
-    <link href="./css/tabler-payments.min.css" rel="stylesheet"/>
-    <link href="./css/tabler-vendors.min.css" rel="stylesheet"/>
-    <link href="./css/demo.min.css" rel="stylesheet"/>
+    <link href="{{HTML::style('css/tabler-flags.min.css')}}" rel="stylesheet"/>
+    <link href="css/tabler.css" rel="stylesheet"/>
+    <link href="css/tabler.min.css" rel="stylesheet"/>
+    <link href="css/tabler-payments.min.css" rel="stylesheet"/>
+    <link href="css/tabler-vendors.min.css" rel="stylesheet"/>
+    <link href="css/demo.min.css" rel="stylesheet"/>
   </head>
   <body class="antialiased">
 

@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::resource('/data_siswa', DataSiswaController::class);
+Route::resource('siswa', DataSiswaController::class);
+// Route::resource('/siswa/create', DataSiswaController::class);
