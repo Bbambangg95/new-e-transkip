@@ -15,7 +15,9 @@ class DataSiswaController extends Controller
      */
     public function index()
     {
-        //
+        return view('main/data_siswa', [
+            'data_siswas' => DataSiswa::all()
+        ]);
     }
 
     /**

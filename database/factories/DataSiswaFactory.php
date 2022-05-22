@@ -17,7 +17,11 @@ class DataSiswaFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama' => $this->faker->name,
+            'nisn' => $this->faker->unique()->numberBetween(100000000, 999999999),
+            'nis' => $this->faker->unique()->numberBetween(100000000, 999999999),
+            'asal' => $this->faker->city,
+            'tanggal_lahir' => $this->faker->dateTimeBetween('-30 years', '-18 years'),
         ];
     }
 }
