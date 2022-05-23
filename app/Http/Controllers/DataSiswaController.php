@@ -40,8 +40,21 @@ class DataSiswaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(StoreDataSiswaRequest $request)
-    {
-        //
+    {   
+        $validate = $request->validate([
+            'nama' => 'required',
+            'nis' => 'required|unique:data_siswas',
+            'nisn' => 'required|unique:data_siswas',
+            'tahun_masuk' => 'required',
+            'asal' => '',
+            'tanggal_lahir' => '',
+        ]);
+
+        DataSiswa::create($validate);
+        return view('siswa.index', [
+            'title' => 'Daftar Siswa',
+            'data_siswas' => DataSiswa::all()
+        ]);
     }
 
     /**
