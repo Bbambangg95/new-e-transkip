@@ -15,9 +15,11 @@ use App\Http\Controllers\DataSiswaController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        'title' => 'Home'
+    ]);
 });
 
 
-Route::resource('siswa', DataSiswaController::class);
+Route::resource('/siswa', DataSiswaController::class);
 // Route::resource('/siswa/create', DataSiswaController::class);

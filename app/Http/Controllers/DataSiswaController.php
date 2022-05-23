@@ -16,6 +16,7 @@ class DataSiswaController extends Controller
     public function index()
     {
         return view('siswa.index', [
+            'title' => 'Daftar Siswa',
             'data_siswas' => DataSiswa::all()
         ]);
     }
@@ -27,7 +28,9 @@ class DataSiswaController extends Controller
      */
     public function create()
     {
-        return view('siswa.create');
+        return view('siswa.create', [
+            'title' => 'Siswa Baru'
+        ]);
     }
 
     /**

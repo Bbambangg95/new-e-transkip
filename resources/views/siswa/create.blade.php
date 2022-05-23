@@ -5,7 +5,8 @@
         <div class="container">
             <div class="row row-cards">
                 <div class="col">
-                    <form action="form-elements.php" method="post" class="card">
+                    <form action="/siswa" method="post" class="card">
+                        @csrf
                             <div class="card-header">
                                 <h4 class="card-title text-center">Input Data Baru</h4>
                             </div>
