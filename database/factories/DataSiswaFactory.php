@@ -21,7 +21,6 @@ class DataSiswaFactory extends Factory
             'nisn' => $this->faker->unique()->numberBetween(100000000, 999999999),
             'nis' => $this->faker->unique()->numberBetween(100000000, 999999999),
             'asal' => $this->faker->city,
-            'tanggal_lahir' => $this->faker->dateTimeBetween('-30 years', '-18 years'),
             'tahun_masuk' => $this->faker->year,
         ];
     }

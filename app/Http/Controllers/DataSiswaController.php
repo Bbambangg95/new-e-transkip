@@ -40,14 +40,14 @@ class DataSiswaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(StoreDataSiswaRequest $request)
-    {   
+    {
         $validate = $request->validate([
             'nama' => 'required',
             'nis' => 'required|unique:data_siswas',
             'nisn' => 'required|unique:data_siswas',
             'tahun_masuk' => 'required',
-            'asal' => '',
-            'tanggal_lahir' => '',
+            'asal' => 'required',
+            'tanggal_lahir' => 'required',
         ]);
 
         DataSiswa::create($validate);

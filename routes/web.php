@@ -22,4 +22,4 @@ Route::get('/', function () {
 
 
 Route::resource('/siswa', DataSiswaController::class);
-// Route::resource('/siswa/create', DataSiswaController::class);
+Route::resource('/semester1', Semester1Controller::class);

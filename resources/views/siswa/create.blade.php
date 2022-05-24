@@ -13,19 +13,14 @@
                         <div class="card-body">
                             <div class="col-md-3 col-xl-12">
                                 <div class="form-group mb-3 ">
-                                    <label class="form-label required">NAMA LENGKAP</label>
+                                    <span class="form-label required">Nama Lengkap</span>
                                     <div>
-                                        <input class="form-control" type="text" name="nama" placeholder="Masukkan Nama"
-                                            required="">
+                                        <input class="form-control" type="text" name="nama" placeholder="Masukkan Nama Lengkap">
                                     </div>
                                 </div>
                                 <div class="form-group mb-3 ">
-                                    <span class="form-label">Tanggal Lahir</span>
-                                    <input class="form-control required" type="text" name="birthday" placeholder="Pilih Tanggal Lahir"/>
-                                </div>
-                                <div class="form-group mb-3 ">
-                                    <span class="form-label">Asal</span>
-                                    <input class="form-control" type="text" name="asal" placeholder="Masukkan NISN ">
+                                    <span class="form-label required">Asal</span>
+                                    <input class="form-control" type="text" name="asal" placeholder="Masukkan Asal ">
                                 </div>
 
                                 <div class="form-group mb-3 ">
@@ -39,16 +34,11 @@
                                 </div>
                                 <div class="form-group mb-3 ">
                                     <span class="form-label required">Tahun Masuk</span>
-                                    <select name="tahun_masuk" class="form-select" required="">
+                                    <select name="tahun_masuk" class="form-select">
                                         <option value="">Pilih Tahun</option>
-                                        <option value="2025">2025</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2020">2020</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2018">2018</option>
-                                        <option value="2017">2017</option>
+                                        @for ($i = date('Y')-5; $i <= date('Y'); $i++)
+                                        <option value="{{$i}}">{{$i}}</option>
+                                        @endfor
                                     </select>
                                 </div>
                                 <div class="form-group mb-3">
